@@ -13,6 +13,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { DatePipe, registerLocaleData } from '@angular/common';
 import localeDe from '@angular/common/locales/de';
 
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MatNativeDateModule } from '@angular/material';
+
 registerLocaleData(localeDe, 'de');
 
 @NgModule({
@@ -22,7 +25,9 @@ registerLocaleData(localeDe, 'de');
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    HttpClientModule
+    BrowserAnimationsModule,
+    HttpClientModule,
+    MatNativeDateModule
   ],
   providers: [
     StatusBar,
